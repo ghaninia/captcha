@@ -1,7 +1,7 @@
 {
     "name": "ghaninia/captcha" ,
     "type": "package",
-    "description": "minimum captcha package",
+    "description": "A simple Laravel service provider for including the Captcha for Laravel.",
     "authors": [
         {
             "name": "Amin Ghaninia",
@@ -10,7 +10,8 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^7.3|^8.0"
+        "php": "^7.3|^8.0" ,
+        "intervention/image": "^2.5"
     },
     "autoload": {
         "psr-4": {

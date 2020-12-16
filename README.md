@@ -1,28 +1,39 @@
 Installation
 ------------
-before install package installed  <a href="http://image.intervention.io">intervention</a>
 
-Copy Files and paste to root Directory
-Open `Composer.json` files and go to `autoload >> psr-4`
-append to object 
-```bash
-"GhaniniaIR\\Captcha\\" : "Package/GhaniniaIR/Captcha/src/"
-```
-open command line and enter 
-```bash
-composer dumpautoload
-```
-Add the service provider in config/app.php:
+Enter the following command to install Captcha
 ```php
-GhaniniaIR\Captcha\CaptchaServiceProvider::class 
+$ composer require ghaninia/captcha
 ```
+Now you have to add the package to your project by entering the following command
+```php
+...config/app.php
+
+'providers' => [
+    ...
+    GhaniniaIR\Captcha\CaptchaServiceProvider::class 
+],
+```
+
 usage 
 -----
+<p>Use the following command at the top of each file of the use Verta class
+</p>
+
+```html
+<img src="{{ route("captcha") }}">
+```
+
+Validation Rules
+-----
+
+<p>
+You can validate form with Validator Laravel
+</p>
+
 ```php
 $this->validate([
     "field" => 'required|captcha'
 ])
 ```
-```html
-<img src="{{ route("captcha") }}">
-```
+
