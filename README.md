@@ -1,3 +1,5 @@
+![Captcha](https://ghaninia.ir/filemanager/uploads/photos/1/download.png)
+
 Installation
 ------------
 
